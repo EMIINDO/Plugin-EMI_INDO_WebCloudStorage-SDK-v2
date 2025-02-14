@@ -1,0 +1,59 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for Cloud Storage Plugin",
+  "text": {
+    "plugins": {
+      "emi_indo_webcloudstorage": {
+        "name": "Cloud Storage",
+        "description": "Cloud Storage for Firebase lets you upload and share user generated content, such as images and video, which allows you to build rich media content into your apps.",
+        "help-url": "https://github.com/EMI-INDO/c3addon-bug/issues",
+        "properties": {},
+        "aceCategories": {
+          "cloud-storage": "cloud-storage",
+          "url": "url",
+          "error": "error"
+        },
+        "conditions": {
+          "on-url": {
+            "list-name": "On Get Url",
+            "display-text": "On Get Url",
+            "description": "On Get Url"
+          },
+          "on-uplaod": {
+            "list-name": "On Uplaod",
+            "display-text": "On Uplaod",
+            "description": "On Uplaod"
+          },
+          "on-error": {
+            "list-name": "On Error",
+            "display-text": "On Error",
+            "description": "On Error"
+          }
+        },
+        "actions": {
+          "uplaod": {
+            "list-name": "Uplaod image",
+            "display-text": "Uplaod image, (path: [b]{0}[/b])",
+            "description": "Uplaod image file",
+            "params": {
+              "path": {
+                "name": "Path Name :",
+                "desc": "Set path name"
+              }
+            }
+          }
+        },
+        "expressions": {
+          "url": {
+            "translated-name": "Url",
+            "description": "Get response Url"
+          },
+          "error-msg": {
+            "translated-name": "Error Msg",
+            "description": "Error Msg"
+          }
+        }
+      }
+    }
+  }
+}

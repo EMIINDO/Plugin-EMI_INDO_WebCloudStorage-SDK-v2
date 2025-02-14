@@ -1,0 +1,61 @@
+{
+  "cloud-storage": {
+    "conditions": [
+      {
+        "id": "on-url",
+        "scriptName": "OnUrl",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-uplaod",
+        "scriptName": "OnUplaod",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-error",
+        "scriptName": "OnError",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "uplaod",
+        "scriptName": "Uplaod",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "path",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "expressions": []
+  },
+  "url": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "url",
+        "expressionName": "Url",
+        "returnType": "any"
+      }
+    ]
+  },
+  "error": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "error-msg",
+        "expressionName": "ErrorMsg",
+        "returnType": "any"
+      }
+    ]
+  }
+}
